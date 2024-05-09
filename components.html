@@ -1,0 +1,117 @@
+<!-- Dropdown Example -->
+<p class="line-item-property__field">
+  <label for="closure" class="form__label">Closure</label>
+  <select required class="required magi-dropdown" id="closure" name="properties[Closure]"
+    form="product-form-{{ section.id }}">
+    <option value="Ring">Ring</option>
+    <option value="Buckle">Buckle</option>
+  </select>
+</p>
+
+
+<!-- Tip type pills -->
+<fieldset class="js product-form__input">
+  <legend class="form__label">Tip type</legend>
+  <input class="{{section.id}}" type="radio" id="metal" name="properties[Tip]" value="metal" checked
+    form='product-form-{{section.id}}'>
+  <label for="metal">Metal</label>
+
+  <input type="radio" class="{{section.id}}" id="tassel" name="properties[Tip]" value="tassel"
+    form='product-form-{{section.id}}'>
+  <label for="tassel">Tassel</label>
+</fieldset>
+<style>
+  .product-form__input input[type="radio"] {
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+    position: absolute;
+    height: 1px;
+    width: 1px;
+  }
+
+  .product-form__input input[type="radio"]:checked+label {
+    background-color: rgb(var(--color-foreground));
+    color: rgb(var(--color-background));
+  }
+
+  .product-form__input input[type="radio"]+label {
+    border: var(--variant-pills-border-width) solid rgba(var(--color-foreground), var(--variant-pills-border-opacity));
+    background-color: rgb(var(--color-background));
+    color: rgba(var(--color-foreground));
+    border-radius: var(--variant-pills-radius);
+    color: rgb(var(--color-foreground));
+    display: inline-block;
+    margin: 0.7rem 0.5rem 0.2rem 0;
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+    line-height: 1;
+    text-align: center;
+    transition: border var(--duration-short) ease;
+    cursor: pointer;
+    position: relative;
+  }
+</style>
+
+
+<!-- Closure & Ring colour pills -->
+<fieldset class="js product-form__input">
+  <legend class="form__label">Closure</legend>
+  <input class="{{section.id}}" type="radio" id="buckle" name="properties[Closure]" value="buckle" checked
+    form='product-form-{{section.id}}'>
+  <label for="buckle">Buckle</label>
+
+  <input type="radio" class="{{section.id}}" id="ring" name="properties[Closure]" value="ring"
+    form='product-form-{{section.id}}'>
+  <label for="ring">Ring</label>
+</fieldset>
+<fieldset class="js product-form__input">
+  <legend class="form__label">Ring colour</legend>
+  <input class="{{section.id}}" type="radio" id="silver" name="properties[Ring colour]" value="silver" checked
+    form='product-form-{{section.id}}'>
+  <label for="silver">Silver</label>
+
+  <input type="radio" class="{{section.id}}" id="gold" name="properties[Ring colour]" value="gold"
+    form='product-form-{{section.id}}'>
+  <label for="gold">Gold</label>
+
+  <input type="radio" class="{{section.id}}" id="antique" name="properties[Ring colour]" value="antique"
+    form='product-form-{{section.id}}'>
+  <label for="antique">Antique</label>
+
+  <input type="radio" class="{{section.id}}" id="black" name="properties[Ring colour]" value="black"
+    form='product-form-{{section.id}}'>
+  <label for="black">Black</label>
+</fieldset>
+<style>
+  .product-form__input input[type="radio"] {
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+    position: absolute;
+    height: 1px;
+    width: 1px;
+  }
+
+  .product-form__input input[type="radio"]:checked+label {
+    background-color: rgb(var(--color-foreground));
+    color: rgb(var(--color-background));
+  }
+
+  .product-form__input input[type="radio"]+label {
+    border: var(--variant-pills-border-width) solid rgba(var(--color-foreground), var(--variant-pills-border-opacity));
+    background-color: rgb(var(--color-background));
+    color: rgba(var(--color-foreground));
+    border-radius: var(--variant-pills-radius);
+    color: rgb(var(--color-foreground));
+    display: inline-block;
+    margin: 0.7rem 0.5rem 0.2rem 0;
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+    line-height: 1;
+    text-align: center;
+    transition: border var(--duration-short) ease;
+    cursor: pointer;
+    position: relative;
+  }
+</style>
